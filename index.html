@@ -4,8 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hi</h1>
+    <div class="payment__card">
+      <div class="card__header">
+        <img id="chip" src="img/chip.svg" alt="Chip" />
+        <img id="logo" src="img/logo.svg" alt="Company Logo" />
+      </div>
+      <div class="card__body">
+        <input
+          disabled
+          type="number"
+          placeholder="#### #### #### ####"
+          name="card-numbers"
+          id="card-numbers"
+        />
+      </div>
+      <div class="card__footer">
+        <div class="card-holder">
+          <label for="card-name">Card Holder</label>
+          <input
+            disabled
+            type="text"
+            placeholder="First Last"
+            name="card-name"
+            id="card-name"
+          />
+        </div>
+        <div class="expiration">
+          <label for="card-expiration">Expiration</label>
+          <input
+            disabled
+            type="number"
+            placeholder="05/20"
+            name="card-expiration"
+            id="card-expiration"
+          />
+        </div>
+      </div>
+      <div class="card__back"></div>
+    </div>
   </body>
 </html>

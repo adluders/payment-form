@@ -1,0 +1,81 @@
+:root {
+  --card-gradient: radial-gradient(circle, #3e4545 42%, #232525 96%);
+  --card-numbers: #c6bda8;
+  --gold: #c9b479;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.payment__card {
+  border: solid red;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  padding-top: 0;
+  /* background: var(--card-gradient); */
+}
+
+.card__header {
+  display: flex;
+  /* border: solid blue; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__body {
+  /* border: solid yellow; */
+  margin: 1rem 0;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid blue; */
+}
+
+/* .card-holder {
+  border: solid red;
+} */
+
+.expiration {
+  /* border: solid green; */
+  width: 22%;
+  /* margin-left: 2rem; */
+  align-self: flex-start;
+}
+
+#card-name {
+  width: 100%;
+}
+
+#chip {
+  width: 10%;
+  /* border: solid green; */
+}
+
+#logo {
+  width: 16%;
+  /* border: solid purple; */
+}
+
+#card-numbers {
+  width: 100%;
+}
+
+#card-expiration {
+  width: 100%;
+}
