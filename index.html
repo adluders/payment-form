@@ -9,11 +9,12 @@
   <body>
     <div class="payment__card">
       <div class="card__header">
-        <img id="chip" src="img/chip.svg" alt="Chip" />
+        <img id="chip" src="img/chip-gold.svg" alt="Chip" />
         <img id="logo" src="img/logo.svg" alt="Company Logo" />
       </div>
       <div class="card__body">
         <input
+          class="card-input"
           disabled
           type="number"
           placeholder="#### #### #### ####"
@@ -25,6 +26,7 @@
         <div class="card-holder">
           <label for="card-name">Card Holder</label>
           <input
+            class="card-input"
             disabled
             type="text"
             placeholder="First Last"
@@ -35,6 +37,7 @@
         <div class="expiration">
           <label for="card-expiration">Expiration</label>
           <input
+            class="card-input"
             disabled
             type="number"
             placeholder="05/20"

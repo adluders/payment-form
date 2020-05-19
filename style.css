@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=DM+Mono:wght@500&display=swap");
+
 :root {
   --card-gradient: radial-gradient(circle, #3e4545 42%, #232525 96%);
   --card-numbers: #c6bda8;
@@ -15,18 +17,23 @@ img {
   width: 100%;
 }
 
+label {
+  font-family: "DM Mono", monospace;
+}
+
 input[type="number"] {
   -moz-appearance: textfield;
 }
 
 .payment__card {
-  border: solid red;
+  /* border: solid red; */
   max-width: 400px;
   margin: auto;
+  margin-top: 2rem;
   border-radius: 0.8rem;
   padding: 1.5rem;
   padding-top: 0;
-  /* background: var(--card-gradient); */
+  background: var(--card-gradient);
 }
 
 .card__header {
@@ -58,8 +65,19 @@ input[type="number"] {
   align-self: flex-start;
 }
 
+.card-input {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--gold);
+  background-color: transparent;
+  border: none;
+  font-family: "Cute Font", cursive;
+}
+
 #card-name {
-  width: 100%;
+  width: 90%;
+  text-align: left;
 }
 
 #chip {
