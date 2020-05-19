@@ -10,7 +10,7 @@
     <div class="payment__card">
       <div class="card__header">
         <img id="chip" src="img/chip-gold.svg" alt="Chip" />
-        <img id="logo" src="img/logo.svg" alt="Company Logo" />
+        <img class="logo" src="img/logo.svg" alt="Company Logo" />
       </div>
       <div class="card__body">
         <input
@@ -46,7 +46,16 @@
           />
         </div>
       </div>
-      <div class="card__back"></div>
+    </div>
+    <div class="card__back">
+      <div class="card-stripe"></div>
+      <div class="card-verification">
+        <label for="cvv">CVV</label>
+        <input type="number" name="cvv" id="cvv" />
+      </div>
+      <div class="card__back-logo">
+        <img src="img/logo.svg" class="logo" alt="Company Logo" />
+      </div>
     </div>
   </body>
 </html>

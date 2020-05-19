@@ -19,6 +19,7 @@ img {
 
 label {
   font-family: "DM Mono", monospace;
+  color: #fff;
 }
 
 input[type="number"] {
@@ -75,6 +76,39 @@ input[type="number"] {
   font-family: "Cute Font", cursive;
 }
 
+.card__back {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  padding-top: 0.4rem;
+  background: var(--card-gradient);
+  display: none;
+}
+
+.card-stripe {
+  border: solid black;
+  height: 25%;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: black;
+}
+
+.card-verification {
+  text-align: right;
+  margin: 0.5rem 0;
+}
+
+.card__back-logo {
+  text-align: right;
+}
+
+.logo {
+  width: 16%;
+  /* border: solid purple; */
+}
+
 #card-name {
   width: 90%;
   text-align: left;
@@ -85,15 +119,15 @@ input[type="number"] {
   /* border: solid green; */
 }
 
-#logo {
-  width: 16%;
-  /* border: solid purple; */
-}
-
 #card-numbers {
   width: 100%;
 }
 
 #card-expiration {
   width: 100%;
+}
+
+#cvv {
+  width: 100%;
+  padding: 0.4rem;
 }
