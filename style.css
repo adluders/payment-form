@@ -147,10 +147,12 @@ input[type="number"] {
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   width: 500px;
+  margin-bottom: 50px;
 }
 
 .payment__form {
   padding: 30px 40px;
+  padding-top: 160px;
 }
 
 .form-control {
@@ -161,4 +163,49 @@ input[type="number"] {
 
 .form-control label {
   display: block;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+.form-control input:focus {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.payment__form button {
+  cursor: pointer;
+  background-color: #0055d4;
+  border: 2px solid #0055d4;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+#shadow {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
 }
