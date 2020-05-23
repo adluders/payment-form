@@ -82,14 +82,27 @@
         <div class="form-control">
           <label for="expdate">Expiration Date</label>
           <input
-            type="date"
+            type="month"
             id="expdate"
+            class="input-holder"
             name="expdate"
-            placeholder="Enter a Credit Card name"
+            placeholder="Month"
           />
           <small>Error message</small>
+          <input
+            type="number"
+            class="input-holder"
+            placeholder="Year"
+            min="2020"
+            max="2100"
+          />
           <label for="form-cvv">CVV</label>
-          <input type="number" name="form-cvv" id="form-cvv" />
+          <input
+            type="number"
+            name="form-cvv"
+            id="form-cvv"
+            class="input-holder"
+          />
         </div>
         <button type="submit" id="shadow">Submit</button>
       </form>

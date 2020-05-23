@@ -155,6 +155,16 @@ input[type="number"] {
   padding-top: 160px;
 }
 
+.payment__form > *:nth-child(3),
+.input-holder:nth-of-type(3),
+.payment__form > *:nth-child(4),
+.input-holder:nth-of-type(4),
+.payment__form > *:nth-child(5),
+.input-holder:nth-of-type(5) {
+  display: flex;
+  justify-content: space-between;
+}
+
 .form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
@@ -203,6 +213,8 @@ input[type="number"] {
   padding: 10px;
   margin-top: 20px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 #shadow {
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
