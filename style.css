@@ -155,14 +155,18 @@ input[type="number"] {
   padding-top: 160px;
 }
 
-.payment__form > *:nth-child(3),
+/* .payment__form > *:nth-child(3),
 .input-holder:nth-of-type(3),
 .payment__form > *:nth-child(4),
 .input-holder:nth-of-type(4),
 .payment__form > *:nth-child(5),
 .input-holder:nth-of-type(5) {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+} */
+
+.form-control select label {
+  display: block;
 }
 
 .form-control {
@@ -177,7 +181,18 @@ input[type="number"] {
   margin-bottom: 5px;
 }
 
-.form-control input {
+.form-control label.form-year {
+  visibility: hidden;
+}
+
+.xpdate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control input,
+select {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
@@ -215,6 +230,7 @@ input[type="number"] {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #shadow {
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);

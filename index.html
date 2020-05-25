@@ -79,30 +79,42 @@
           />
           <small>Error message</small>
         </div>
-        <div class="form-control">
-          <label for="expdate">Expiration Date</label>
-          <input
-            type="month"
-            id="expdate"
-            class="input-holder"
-            name="expdate"
-            placeholder="Month"
-          />
-          <small>Error message</small>
-          <input
-            type="number"
-            class="input-holder"
-            placeholder="Year"
-            min="2020"
-            max="2100"
-          />
-          <label for="form-cvv">CVV</label>
-          <input
-            type="number"
-            name="form-cvv"
-            id="form-cvv"
-            class="input-holder"
-          />
+        <div class="xpdate">
+          <div class="form-control">
+            <label for="expdate">Expiration Date</label>
+            <select id="month" name="month">
+              <option value="month" selected>Month</option>
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="year" class="form-year">""</label>
+            <select name="year-options" id="years">
+              <option value="year">Year</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="form-cvv">CVV</label>
+            <input
+              type="number"
+              name="form-cvv"
+              id="form-cvv"
+              class="input-holder"
+            />
+          </div>
         </div>
         <button type="submit" id="shadow">Submit</button>
       </form>

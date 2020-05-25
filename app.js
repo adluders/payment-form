@@ -37,4 +37,18 @@ function getCardDate() {
 
 numberInput.addEventListener("keyup", updateCardNum);
 nameInput.addEventListener("keyup", updateCardHolder);
-cardDatePicker.addEventListener("input", getCardDate);
+// cardDatePicker.addEventListener("input", getCardDate);
+
+// Form
+
+const years = document.getElementById("years");
+
+const currYear = new Date().getFullYear();
+
+for (let i = currYear; i < currYear + 5; i++) {
+  const newOption = document.createElement("option");
+  newOption.className = "year-options";
+  newOption.innerHTML = i;
+  newOption.value = i;
+  years.appendChild(newOption);
+}
