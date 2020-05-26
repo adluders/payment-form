@@ -199,6 +199,17 @@ select {
   width: 100%;
   padding: 10px;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .form-control select.error {
+  border-color: #e74c3c;
+} */
+
 .form-control input:focus {
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
@@ -211,6 +222,11 @@ select {
   bottom: 0;
   left: 0;
   visibility: hidden;
+}
+
+.form-control.error input,
+select {
+  border-color: #e74c3c;
 }
 
 .form-control.error small {

@@ -52,3 +52,51 @@ for (let i = currYear; i < currYear + 5; i++) {
   newOption.value = i;
   years.appendChild(newOption);
 }
+
+// Check input length
+
+// Form validation
+const form = document.getElementById("payment__form");
+const cardnumber = document.getElementById("cardnumber");
+const cardname = document.getElementById("cardname");
+const month = document.getElementById("month");
+const year = document.getElementById("years");
+const formcvv = document.getElementById("form-cvv");
+
+// Show input error messege
+function showError(input, messege) {
+  const formControl = input.parentElement;
+  formControl.className = "form-control error";
+  const small = formControl.querySelector("small");
+  small.innerText = messege;
+  // const option = option.parentElement;
+  // option.selectedIindex = option.options[option.selectedIndex].value;
+}
+
+// Event listeners
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  if (cardnumber.value < 16) {
+    showError(cardnumber, "Card number must be 16 digits");
+  }
+
+  if (cardname.value === "") {
+    showError(cardname, "Card holder is required");
+  }
+
+  if (month.value === "month") {
+    showError(month, "required");
+  }
+
+  if (year.value === "years") {
+    showError(year, "required");
+  }
+
+  if (formcvv.value == 3) {
+    showError(formcvv, "CVV number must be 3 digits");
+  }
+});
+
+checkLength(cardnumber, 1, 16);
+checkLength(formcvv, 1, 3);

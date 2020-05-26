@@ -67,6 +67,8 @@
             type="number"
             id="cardnumber"
             placeholder="Enter Credit Card number"
+            required
+            onKeyPress="if(this.value.length==16) return false;"
           />
           <small>Error message</small>
         </div>
@@ -75,7 +77,8 @@
           <input
             type="text"
             id="cardname"
-            placeholder="Enter a Credit Card name"
+            placeholder="Enter a Credit Card holder name"
+            required
           />
           <small>Error message</small>
         </div>
@@ -105,6 +108,7 @@
             <select name="year-options" id="years">
               <option value="year">Year</option>
             </select>
+            <small>Error message</small>
           </div>
           <div class="form-control">
             <label for="form-cvv">CVV</label>
@@ -113,7 +117,10 @@
               name="form-cvv"
               id="form-cvv"
               class="input-holder"
+              required
+              onKeyPress="if(this.value.length==3) return false;"
             />
+            <small>Error message</small>
           </div>
         </div>
         <button type="submit" id="shadow">Submit</button>
